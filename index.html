@@ -1,124 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Moon Author Center</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moon Author Center</title>
 
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial, sans-serif;
-}
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
 
-body{
-  background:#0b0f1a;
-  color:#fff;
-}
+    body{
+      background:#0f0f1a;
+      color:#fff;
+    }
 
-/* main wrapper */
-.container{
-  max-width:1000px;
-  margin:50px auto;
-  padding:20px;
-}
+    /* REMOVE BLACK BORDER STYLE FIX */
+    .container{
+      max-width:1100px;
+      margin:40px auto;
+      padding:20px;
+      border:none;
+      outline:none;
+    }
 
-/* header */
-.header{
-  text-align:center;
-  margin-bottom:40px;
-}
+    header{
+      text-align:center;
+      padding:40px 20px;
+    }
 
-.header h1{
-  font-size:42px;
-  letter-spacing:2px;
-}
+    header h1{
+      font-size:40px;
+      letter-spacing:2px;
+    }
 
-.header p{
-  opacity:0.7;
-  margin-top:8px;
-}
+    header p{
+      opacity:0.7;
+      margin-top:10px;
+    }
 
-/* cards */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-  gap:20px;
-}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+      margin-top:40px;
+    }
 
-.card{
-  background:#161b2e;
-  padding:20px;
-  border-radius:16px;
-  border:none; /* no black border */
-  box-shadow:0 8px 20px rgba(0,0,0,0.4);
-  transition:0.3s;
-}
+    .card{
+      background:#1a1a2e;
+      padding:20px;
+      border-radius:15px;
+      border:none; /* removed black border */
+      box-shadow:0 10px 25px rgba(0,0,0,0.3);
+      transition:0.3s;
+    }
 
-.card:hover{
-  transform:translateY(-6px);
-}
+    .card:hover{
+      transform:translateY(-5px);
+    }
 
-.card h3{
-  margin-bottom:10px;
-}
+    .card h3{
+      margin-bottom:10px;
+    }
 
-.card p{
-  opacity:0.7;
-  font-size:14px;
-}
+    .btn{
+      display:inline-block;
+      margin-top:10px;
+      padding:10px 15px;
+      background:#6c5ce7;
+      color:#fff;
+      border-radius:10px;
+      text-decoration:none;
+    }
 
-.btn{
-  display:inline-block;
-  margin-top:15px;
-  padding:10px 14px;
-  background:#6c5ce7;
-  color:white;
-  text-decoration:none;
-  border-radius:10px;
-}
-
-.btn:hover{
-  background:#5848d6;
-}
-</style>
-
+    .btn:hover{
+      background:#5a4bd6;
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="container">
+  <div class="container">
+    <header>
+      <h1>Moon Author Center</h1>
+      <p>Your creative writing dashboard</p>
+    </header>
 
-  <div class="header">
-    <h1>Moon Author Center</h1>
-    <p>Your writing dashboard</p>
+    <div class="grid">
+      <div class="card">
+        <h3>My Stories</h3>
+        <p>Manage and edit your written works.</p>
+        <a class="btn" href="#">Open</a>
+      </div>
+
+      <div class="card">
+        <h3>Drafts</h3>
+        <p>Continue your unfinished stories.</p>
+        <a class="btn" href="#">View</a>
+      </div>
+
+      <div class="card">
+        <h3>Published</h3>
+        <p>See your published works.</p>
+        <a class="btn" href="#">Check</a>
+      </div>
+    </div>
   </div>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>My Stories</h3>
-      <p>Manage your works</p>
-      <a href="#" class="btn">Open</a>
-    </div>
-
-    <div class="card">
-      <h3>Drafts</h3>
-      <p>Continue writing</p>
-      <a href="#" class="btn">View</a>
-    </div>
-
-    <div class="card">
-      <h3>Published</h3>
-      <p>Your published works</p>
-      <a href="#" class="btn">Check</a>
-    </div>
-
-  </div>
-
-</div>
 
 </body>
 </html>
